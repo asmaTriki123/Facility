@@ -1,0 +1,7 @@
+# Ignorer le dossier node_modules
+node_modules/
+
+# Ignorer le fichier .env contenant les variables d'environnement sensibles
+.env
+build
+# Ignorer les fichiers téléchargés dans public/uploads
