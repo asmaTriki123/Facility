@@ -2,7 +2,7 @@
 import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
-
+import crypto from 'crypto';
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     const destPath = path.join(__dirname, '../../public/uploads/documents');
@@ -12,8 +12,10 @@ const storage = multer.diskStorage({
     cb(null, destPath);
   },
   filename: (req, file, cb) => {
-    const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`;
+    //const uniqueSuffix = `${Date.now()}-${Math.round(Math.random() * 1E9)}`;
     // On garde seulement la partie après le dernier '-'
+    const uniqueSuffix = `${Date.now()}-${crypto.randomInt(1E9)}`;
+
     const finalName = uniqueSuffix.split('-').pop() + '.pdf';
     cb(null, finalName);
   }
