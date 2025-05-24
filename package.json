@@ -31,7 +31,7 @@
         "phantomjs-prebuilt": "^2.1.16",
         "puppeteer": "^24.7.2",
         "reflect-metadata": "^0.2.2",
-        "sequelize": "^6.19.1",
+        "sequelize": "^6.29.0",
         "sequelize-auto-migrations": "^1.0.3",
         "sequelize-typescript": "^2.1.6"
     },
