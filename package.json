@@ -10,7 +10,7 @@
         "start": "node build/server.js"
     },
     "dependencies": {
-        "@prisma/client": "^5.14.0",
+        "@prisma/client": "^5.22.0",
         "@types/cron": "^2.4.3",
         "@types/express-fileupload": "^1.5.1",
         "@types/html-pdf": "^3.0.3",
